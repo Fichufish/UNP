@@ -110,10 +110,6 @@ int main(int argc, char **argv)
 	struct sockaddr_in cli_addr, serv_addr;
 	
 
-//背景執行
-	if(fork() != 0)
-		return 0;
-
 //開啟網路socket
 	listenfd = socket(AF_INET, SOCK_STREAM, 0);
 //網路連線設定

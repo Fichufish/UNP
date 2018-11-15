@@ -96,7 +96,7 @@ void handle_socket(int fd)
 int main(int argc, char **argv)
 {
 	int i, maxi, maxfd;
-	int listenfd, socketfd, connfd;
+	int listenfd, sockfd, connfd;
 	int nready, client[FD_SETSIZE];
 	ssize_t n;
 	fd_set rset, allset;
